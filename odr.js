@@ -140,7 +140,7 @@ window.addEventListener('load', function () {
         arg.Inputs.input1.Values.push(p);
 
         jQuery.ajax({
-            url: "https://odr-test-1.azure-api.net/predict/score",
+            url: "https://myodr.azure-api.net/predict/pam",
             beforeSend: function (xhrObj) {
                 xhrObj.setRequestHeader("Content-Type", "application/json;charset=utf-8");
                 xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "e1bf6ee6beba43d38229efa754ad9354");
